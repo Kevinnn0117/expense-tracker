@@ -4,23 +4,16 @@ public class Main {
         Expense e2 = new Expense(2.75, "Metro", "Travel");
         Expense e3 = new Expense(18.00, "Book", "Learning");
 
-        System.out.println(
-                e1.getDescription() + " | " +
-                        e1.getCategory() + " | " +
-                        e1.getAmount()
-        );
+        Expense[] expenses = {e1, e2, e3};
 
-        System.out.println(
-                e2.getDescription() + " | " +
-                        e2.getCategory() + " | " +
-                        e2.getAmount()
-        );
+        for (int i = 0; i < expenses.length; i++) {
+            System.out.println(
+                expenses[i].getDescription() + " | " +
+                        expenses[i].getCategory() + " | " +
+                        expenses[i].getAmount()
+            );
+        }
 
-        System.out.println(
-                e3.getDescription() + " | " +
-                        e3.getCategory() + " | " +
-                        e3.getAmount()
-        );
 
         double total = e1.getAmount() + e2.getAmount() + e3.getAmount();
 
