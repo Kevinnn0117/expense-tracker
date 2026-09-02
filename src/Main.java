@@ -7,11 +7,12 @@ public class Main {
         Expense[] expenses = {e1, e2, e3};
 
         for (int i = 0; i < expenses.length; i++) {
-            System.out.println(
+            System.out.print(
                 expenses[i].getDescription() + " | " +
-                        expenses[i].getCategory() + " | " +
-                        expenses[i].getAmount()
+                        expenses[i].getCategory() + " | "
             );
+
+            System.out.printf("%.2f%n", expenses[i].getAmount());
         }
 
 
