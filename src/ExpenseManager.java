@@ -4,6 +4,11 @@ public class ExpenseManager {
     private ArrayList<Expense> expenses = new ArrayList<>();
 
     public void add(Expense expense) {
+        if (expense.getAmount() <= 0){
+            System.out.println("Amount must be greater than 0.");
+            return;
+        }
+
         expenses.add(expense);
     }
 
