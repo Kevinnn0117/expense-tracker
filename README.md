@@ -25,7 +25,8 @@ Open the project in IntelliJ IDEA and run `Main.java`.
 Compile the program:
 
 ```bash
-javac -d out src/Expense.java src/Main.java 
+javac -d out src/*.java
+java -cp out Main
 ```
 
 Run the program:
